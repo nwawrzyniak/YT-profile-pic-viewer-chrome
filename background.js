@@ -1,4 +1,4 @@
-chrome.pageAction.onClicked.addListener((tab, data) => {
+chrome.action.onClicked.addListener((tab) => {
     chrome.tabs.sendMessage(
         tab.id,
         {}
